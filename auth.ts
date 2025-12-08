@@ -11,29 +11,32 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   adapter: PrismaAdapter(db),
   session: { strategy: "jwt" },
   providers: [
-    Resend({
-      from: env.AUTH_RESEND_EMAIL_FROM,
-      apiKey: env.AUTH_RESEND_KEY,
-      sendVerificationRequest: async ({ identifier: email, url, provider, theme }) => {
-        const { host } = new URL(url)
-        await fetch("https://api.resend.com/emails", {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${provider.apiKey}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            from: provider.from,
-            to: email,
-            subject: `Verify Email for Andrew Sam`,
-            html: render(VerifyUserEmailTemplate({ inviteLink: url })),
-            text: render(VerifyUserEmailTemplate({ inviteLink: url }), { plainText: true }),
+    ...(env.AUTH_RESEND_KEY && env.AUTH_RESEND_EMAIL_FROM
+      ? [
+          Resend({
+            from: env.AUTH_RESEND_EMAIL_FROM,
+            apiKey: env.AUTH_RESEND_KEY,
+            sendVerificationRequest: async ({ identifier: email, url, provider, theme }) => {
+              const { host } = new URL(url)
+              await fetch("https://api.resend.com/emails", {
+                method: "POST",
+                headers: {
+                  Authorization: `Bearer ${provider.apiKey}`,
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  from: provider.from,
+                  to: email,
+                  subject: `Verify Email for Andrew Sam`,
+                  html: render(VerifyUserEmailTemplate({ inviteLink: url })),
+                  text: render(VerifyUserEmailTemplate({ inviteLink: url }), { plainText: true }),
+                }),
+              })
+            },
           }),
-        })
-      },
-    }),
+        ]
+      : []),
     ...(authConfig.providers || []),
-
   ],
   ...authConfig.pages,
   ...authConfig.callbacks,
