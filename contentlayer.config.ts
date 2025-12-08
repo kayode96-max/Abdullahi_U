@@ -203,8 +203,13 @@ export default makeSource({
     ],
   },
   onSuccess: async (importData) => {
-    const { allBlogs } = await importData()
-    createTagCount(allBlogs)
-    createSearchIndex(allBlogs)
+    try {
+      const { allBlogs } = await importData()
+      createTagCount(allBlogs)
+      createSearchIndex(allBlogs)
+    } catch (error) {
+      console.warn('Contentlayer onSuccess callback warning:', error.message)
+      // Continue anyway - this is just for generating search/tag data
+    }
   },
 })
