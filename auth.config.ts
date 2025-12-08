@@ -14,21 +14,29 @@ import bcrypt from "bcryptjs";
 // Notice this is only an object, not a full Auth.js instance
 export default {
     providers: [
-      GitHub({
-        clientId: env.GITHUB_CLIENT_ID,
-        clientSecret: env.GITHUB_CLIENT_SECRET,
-      }),
-      Google({
-        clientId: env.GOOGLE_CLIENT_ID,
-        clientSecret: env.GOOGLE_CLIENT_SECRET,
-        authorization: {
-          params: {
-            prompt: "consent",
-            access_type: "offline",
-            response_type: "code"
-          }
-        },
-      }),
+      ...(env.GITHUB_CLIENT_ID && env.GITHUB_CLIENT_SECRET
+        ? [
+            GitHub({
+              clientId: env.GITHUB_CLIENT_ID,
+              clientSecret: env.GITHUB_CLIENT_SECRET,
+            }),
+          ]
+        : []),
+      ...(env.GOOGLE_CLIENT_ID && env.GOOGLE_CLIENT_SECRET
+        ? [
+            Google({
+              clientId: env.GOOGLE_CLIENT_ID,
+              clientSecret: env.GOOGLE_CLIENT_SECRET,
+              authorization: {
+                params: {
+                  prompt: "consent",
+                  access_type: "offline",
+                  response_type: "code",
+                },
+              },
+            }),
+          ]
+        : []),
     //   Resend({
     //     from: env.AUTH_RESEND_EMAIL_FROM,
     //     apiKey: env.AUTH_RESEND_KEY,
