@@ -8,10 +8,10 @@ const siteMetadata = {
   description: `An over-engineered personal blog where I write about software engineering, productivity, and other stupid stuff. Also, it's my portfolio.`,
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://www.andrewsam.xyz',
+  siteUrl: 'https://www.abdullahiusman.tech',
   analyticsURL:
   "https://cloud.umami.is/share/Uyouy7mKI5Oy68QX/andrewsam.xyz",
-  siteRepo: 'https://github.com/kayode96-max/andrewsam.xyz',
+  siteRepo: 'https://github.com/kayode96-max/Abdullahi_U',
   siteLogo: '/static/images/site/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   // mastodon: 'https://mastodon.social/@mastodonuser',
