@@ -3,9 +3,13 @@ import { Resend } from 'resend'
 import { render } from '@react-email/render'
 import { env } from '@/env.mjs'
 
-const resend = new Resend(env.RESEND_TOKEN)
+const resend = env.RESEND_TOKEN ? new Resend(env.RESEND_TOKEN) : null
 
 export async function POST() {
+  if (!resend) {
+    return Response.json({ error: 'Email service not configured' }, { status: 503 })
+  }
+
   try {
     const { data, error } = await resend.emails.send({
       from: 'Acme <onboarding@resend.dev>',

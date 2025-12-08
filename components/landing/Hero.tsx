@@ -46,7 +46,8 @@ export default function Hero() {
         />
       </div>
       <p className="mx-auto mt-3 max-w-lg text-gray-500 dark:text-gray-400 md:text-xl lg:text-lg xl:text-xl">
-        Welcome to my dev domain, my personal blog where I document my coding journey, share problem-solving notes, and explore the future of technology.
+        Welcome to my dev domain, my personal blog where I document my coding journey, share
+        problem-solving notes, and explore the future of technology.
       </p>
       <p className="mx-auto max-w-lg text-gray-500 dark:text-gray-400 md:text-xl lg:text-lg xl:text-xl">
         Also, it's my portfolio.

@@ -35,7 +35,9 @@ export default async function Projects() {
           </div> */}
           <Separator />
           <div className=" py-12">
-            <h3 className="mb-4 text-3xl font-extrabold leading-9 tracking-tight">Personal Projects</h3>
+            <h3 className="mb-4 text-3xl font-extrabold leading-9 tracking-tight">
+              Personal Projects
+            </h3>
             <div className="-m-4 grid grid-cols-1 gap-2 md:grid-cols-2">
               {sideProjects.map((project) => (
                 <ProjectCard key={project.title} project={project} />
@@ -43,7 +45,9 @@ export default async function Projects() {
             </div>
           </div>
           <div className=" py-12">
-            <h3 className="mb-4 text-3xl font-extrabold leading-9 tracking-tight">Open Source Projects</h3>
+            <h3 className="mb-4 text-3xl font-extrabold leading-9 tracking-tight">
+              Open Source Projects
+            </h3>
             <div className="-m-4 grid grid-cols-1 gap-2 md:grid-cols-2">
               {openSource.map((project) => (
                 <ProjectCard key={project.title} project={project} />
