@@ -25,7 +25,7 @@ const siteMetadata = {
   // threads: 'https://www.threads.net',
   instagram: 'https://www.instagram.com/kayode96max',
   spotify: 'https://open.spotify.com/user/nm8cvqw3q56ft39knd63d1dgw',
-  // buymeacoffee: 'https://buymeacoffee.com/kayode96max',
+  buymeacoffee: 'https://buymeacoffee.com/kayode96max',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
