@@ -227,6 +227,7 @@ export let skillsData: Skill[] = [
     id: 'javascript',
     category: 'Languages',
     level: 'advanced',
+    mostUsed: true,
   },
   {
     name: 'Typescript',
@@ -241,6 +242,7 @@ export let skillsData: Skill[] = [
     category: 'Web Dev',
     field: 'Frontend',
     level: 'advanced',
+    mostUsed: true,
   },
   {
     name: 'Next.js',
@@ -284,6 +286,7 @@ export let skillsData: Skill[] = [
     field: 'Frontend',
     subfield: 'Styling',
     level: 'advanced',
+    mostUsed: true,
   },
   // {
   //   name: 'Prisma',
@@ -386,6 +389,7 @@ export let skillsData: Skill[] = [
     category: 'DevOps & Tools',
     field: 'Source Control',
     level: 'advanced',
+    mostUsed: true,
   },
   {
     name: 'Github',
@@ -393,6 +397,7 @@ export let skillsData: Skill[] = [
     category: 'DevOps & Tools',
     field: 'Source Control',
     level: 'advanced',
+    mostUsed: true,
   },
   // {
   //   name: 'Azure DevOps',
