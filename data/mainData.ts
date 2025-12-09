@@ -32,7 +32,7 @@ export interface TechStackType {
 }
 export interface Experience {
   title: string
-  roleType: 'Fulltime' | 'Part-time' | 'Consultant' | 'Freelance'
+  roleType: 'Fulltime' | 'Part-time' | 'Consultant' | 'Freelance' | 'Intern'
   startDate: string
   endDate?: string
   description: string
@@ -60,10 +60,10 @@ export let projectsData: Project[] = [
   {
     type: 'self',
     title: 'Personal website',
-    imgSrc: '/static/images/projects/6.jpg',
-    repo: 'andrewsam.xyz',
-    url: 'https://andrewsam.xyz',
-    builtWith: ['Next.js', 'Tailwind', 'Typescript', 'Prisma', 'Umami'],
+    imgSrc: '/static/images/projects/personal.png',
+    repo: 'Abdullahi_U',
+    url: 'https://abdullahiusman.tech',
+    builtWith: ['Next.js', 'Tailwind', 'Typescript', 'Shadcn UI', 'Framer', 'Prisma', 'NextAuth', 'Mongodb', 'Umami'],
   },
   {
     type: 'self',
@@ -78,10 +78,28 @@ export let projectsData: Project[] = [
     type: 'opensource',
     title: 'FreeLance Website',
     imgSrc: '/static/images/projects/freelance.png',
-    builtWith: ['TypeScript', 'CSS', 'Html', 'Next.js', ],
-    description: "The AI Voice Assistant is a full-stack application designed to facilitate seamless customer interactions through voice commands. It leverages WebRTC to handle reservations, communicate with external APIs for information retrieval, and interact with the backend to manage reservations, including submissions, inquiries, and cancellations. Additionally, the project features a second voice assistant based on Retrieval-Augmented Generation (RAG), allowing users to upload PDF or DOCX files and engage in voice-based conversations to query the document's content.",
+    builtWith: ['TypeScript', 'CSS', 'Html', 'Next.js', 'Mongodb', 'TailwindCSS', 'Bun', 'Clerk', 'Socket.io' ],
+    description: "A modern freelance marketplace connecting clients with skilled freelancers, featuring secure job postings, chat, reporting, and seamless project management.",
     repo: 'freelance-web',
     url:'https://freelance-web-blue.vercel.app/'
+  },
+  {
+    type: 'opensource',
+    title: 'Recruiter Website',
+    imgSrc: '/static/images/projects/smoothhire.png',
+    builtWith: ['TypeScript', 'CSS', 'Html', 'Next.js', 'Mongodb', 'TailwindCSS', 'Github', 'ESLint', 'MongoDB', 'JavaScript', 'React', 'LeetCode', 'Shadcn UI' ],
+    description: "SmoothHire is a SaaS job application platform that simplifies the hiring process. Offer a seamless experience to applicants and streamline recruitment for companies, eliminating the complexities of traditional portals.",
+    repo: 'smooth-hire',
+    url:'https://smooth-hire.vercel.app/'
+  },
+{
+    type: 'opensource',
+    title: 'Developer Profile',
+    imgSrc: '/static/images/projects/skillsync.png',
+    builtWith: ['TypeScript', 'CSS', 'Html', 'Next.js', 'Mongodb', 'TailwindCSS', 'Bun', 'Clerk', 'Socket.io' ],
+    description: "SkillSync is a project that helps developers create stunning profiles by seamlessly fetching data from GitHub and LeetCode. With customizable features like profile images, banners, skill visualizations, and social links, Skillsync empowers you to showcase your expertise effortlessly. Built with Next.js 14, MongoDB, and more.",
+    repo: 'SkillSync',
+    url:'https://profile-sable-nu.vercel.app/'
   },
   {
     type: 'self',
@@ -171,37 +189,34 @@ export let experienceData: Company[] = [
   //     },
   //   ],
   // },
-  // {
-  //   name: 'FlairsTech',
-  //   location: 'Maadi - Egypt',
-  //   description: 'FlairsTech is a software development company that specializes in building custom software solutions for businesses. We help businesses automate their processes and improve their efficiency.',
-  //   imgSrc: 'https://media.licdn.com/dms/image/C4D0BAQFEqFIZYFhFpA/company-logo_200_200/0/1630540236589/flairstech_logo?e=1726704000&v=beta&t=AuvxQoMg94CqpL1A2-SOgZIChOIE14uscukufiaUDv0',
-  //   url: 'https://flairstech.com/',
-  //   active: false,
-  //   items: [
-  //     {
-  //       title: 'AI Fullstack Developer (Consultant)',
-  //       roleType: 'Consultant',
-  //       startDate: '2023/02/01',
-  //       endDate: '2025/01/01',
-  //       description: 'Developed AI solutions for the operations department, enhancing efficiency and performance across various tasks. Created an AI web application for the quality team, reducing call/ticket evaluation time by up to 80% and achieving a 90% utilization rate for overall call evaluations. Led the development and deployment of the web application, handling frontend, backend, AI microservices, server configurations, and deployment.',
-  //       techStack: [
-  //         { name: 'Mistral LLM', href: '#' },
-  //         { name: 'Whisper ASR', href: '#' },
-  //         { name: 'VLLM', href: '#' },
-  //         { name: 'Sveltekit', href: 'https://kit.svelte.dev/' },
-  //         { name: 'FastAPI', href: 'https://fastapi.tiangolo.com/' },
-  //         { name: 'Docker', href: 'https://www.docker.com/' },
-  //         { name: 'Postgres', href: 'https://www.postgresql.org/' },
-  //         { name: 'AWS', href: 'https://aws.amazon.com/' },
-  //         { name: 'github', href: 'https://github.com/' },
-  //         { name: 'nginx', href: 'https://www.nginx.com/' },
-  //         { name: 'langchain', href: 'https://www.langchain.com/' },
-  //       ],
-  //       active: false,
-  //     },
-  //   ],
-  // },
+  {
+    name: 'Cademit',
+    location: 'Minna - Nigeria',
+    description: 'Cademit is a company dedicated to building the home and frontiers of STEM Innovations and advancement through education capacity building and products development. Currently serves as Digital Skills Career-Track Mentorship provider',
+    imgSrc: 'https://media.licdn.com/dms/image/v2/C560BAQEnB9yXvj3OOA/company-logo_200_200/company-logo_200_200/0/1647344284429/cademit_logo?e=1766620800&v=beta&t=u4Cybic_MmXfV5gu6rh8-QQqYkNZdRAdFZeMrUYRoZ0',
+    url: 'https://www.linkedin.com/company/cademit',
+    active: false,
+    items: [
+      {
+        title: 'Frontend Development Intern',
+        roleType: 'Intern',
+        startDate: '2023/10/01',
+        endDate: '2024/01/01',
+        description: 'Building responsive interfaces, improving UI/UX, and strengthening my knowledge of modern web technologies. Worked with senior developers to implement features, fix bugs, and learn best practices in React, component design, and clean code.',
+        techStack: [
+          { name: 'HTML', href: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+          { name: 'CSS', href: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+          { name: 'Javascript', href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+          { name: 'React', href: 'https://reactjs.org/' },
+          { name: 'Tailwind', href: 'https://tailwindcss.com/' },
+          { name: 'Typescript', href: 'https://www.typescriptlang.org/' },
+          { name: 'Node.js', href: 'https://nodejs.org/' },
+          { name: 'GitHub', href: 'https://github.com/' },
+        ],
+        active: false,
+      },
+    ],
+  },
 ];
 
 
