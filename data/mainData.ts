@@ -59,10 +59,11 @@ export let projectsData: Project[] = [
 
   {
     type: 'self',
-    title: 'Personal website',
+    title: 'Abdullahi_U(Personal website)',
     imgSrc: '/static/images/projects/personal.png',
     repo: 'Abdullahi_U',
     url: 'https://abdullahiusman.tech',
+    description: 'A full-stack Next.js developer portfolio and blog featuring a technical blog with MDX, a project showcase, a resume page, and a modern authentication system using NextAuth (email magic links + OAuth).',
     builtWith: ['Next.js', 'Tailwind', 'Typescript', 'Shadcn UI', 'Framer', 'Prisma', 'NextAuth', 'Mongodb', 'Umami'],
   },
   {
@@ -76,7 +77,7 @@ export let projectsData: Project[] = [
   },
   {
     type: 'opensource',
-    title: 'FreeLance Website',
+    title: 'FreelanceBase (Freelance Website)',
     imgSrc: '/static/images/projects/freelance.png',
     builtWith: ['TypeScript', 'CSS', 'Html', 'Next.js', 'Mongodb', 'TailwindCSS', 'Bun', 'Clerk', 'Socket.io' ],
     description: "A modern freelance marketplace connecting clients with skilled freelancers, featuring secure job postings, chat, reporting, and seamless project management.",
@@ -85,8 +86,8 @@ export let projectsData: Project[] = [
   },
   {
     type: 'opensource',
-    title: 'Recruiter Website',
-    imgSrc: '/static/images/projects/smoothhire.png',
+    title: 'SmoothHire (Recruiter Website)',
+    imgSrc: '/static/images/projects/smoothire.png',
     builtWith: ['TypeScript', 'CSS', 'Html', 'Next.js', 'Mongodb', 'TailwindCSS', 'Github', 'ESLint', 'MongoDB', 'JavaScript', 'React', 'LeetCode', 'Shadcn UI' ],
     description: "SmoothHire is a SaaS job application platform that simplifies the hiring process. Offer a seamless experience to applicants and streamline recruitment for companies, eliminating the complexities of traditional portals.",
     repo: 'smooth-hire',
@@ -94,7 +95,7 @@ export let projectsData: Project[] = [
   },
 {
     type: 'opensource',
-    title: 'Developer Profile',
+    title: 'SkillSync(Developer Profile)',
     imgSrc: '/static/images/projects/skillsync.png',
     builtWith: ['TypeScript', 'CSS', 'Html', 'Next.js', 'Mongodb', 'TailwindCSS', 'Bun', 'Clerk', 'Socket.io' ],
     description: "SkillSync is a project that helps developers create stunning profiles by seamlessly fetching data from GitHub and LeetCode. With customizable features like profile images, banners, skill visualizations, and social links, Skillsync empowers you to showcase your expertise effortlessly. Built with Next.js 14, MongoDB, and more.",
@@ -103,7 +104,7 @@ export let projectsData: Project[] = [
   },
   {
     type: 'self',
-    title: 'Agricultural Enhancement',
+    title: 'AgroPal (Agricultural Enhancement)',
     imgSrc: '/static/images/projects/agropal.png',
     builtWith: ['TypeScript', 'Tailwind', 'React', 'Next.js', 'Firebase', 'Google Genkit', 'Radix UI', 'Vercel' ],
     description: "Agropal is a comprehensive digital platform designed to transform agricultural practices across Nigeria through the power of artificial intelligence. Built with modern web technologies and multilingual support, it bridges the gap between traditional farming and digital innovation.",
@@ -112,7 +113,7 @@ export let projectsData: Project[] = [
   },
   {
     type: 'self',
-    title: 'National Department Website Draft',
+    title: 'NAMMESNG (National Department Website Draft)',
     imgSrc: '/static/images/projects/nammesng.png',
     builtWith: ['TypeScript', 'Tailwind', 'React', 'Next.js', 'Firebase', 'Google Genkit', 'Radix UI', 'Vercel' ],
     description: "NAMMES Portal is a modern membership and community platform for the Nigerian Association of Materials and Metallurgical Engineering Students. It features a public landing page showcasing membership benefits, a secure member-only dashboard with news/resources/networking sections, and membership registration capabilities",
