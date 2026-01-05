@@ -1,7 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import Link from 'next/link'
 import { Suspense } from 'react'
-import NowPlaying from '@/components/spotify/NowPlaying'
 import IconsBundle from '@/components/social-icons'
 import { cn } from '@/lib/utils'
 import SectionContainer from '@/components/SectionContainer'
@@ -12,9 +11,6 @@ export default function Footer() {
       <SectionContainer>
         <div className="mb-0 flex flex-col justify-start space-x-0 space-y-3 py-10">
           <div className="flex flex-col items-center space-y-3 text-sm sm:flex-row sm:justify-between sm:text-base">
-            {/* <Suspense fallback="loading..."> */}
-            <NowPlaying />
-            {/* </Suspense> */}
             <ul className="flex cursor-pointer items-center space-x-5">
               <li>
                 <IconsBundle kind="linkedin" href={siteMetadata.linkedin} size={5} />
@@ -24,9 +20,6 @@ export default function Footer() {
               </li>
               <li>
                 <IconsBundle kind="mail" href={`mailto:${siteMetadata.email}`} size={5} />
-              </li>
-              <li>
-                <IconsBundle kind="spotify" href={siteMetadata.spotify} size={5} />
               </li>
               <li>
                 <IconsBundle kind="instagram" href={siteMetadata.instagram} size={5} />

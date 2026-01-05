@@ -6,7 +6,6 @@ import NewsletterForm from 'pliny/ui/NewsletterForm'
 import { LuLoader2 } from 'react-icons/lu'
 
 import { Suspense } from 'react'
-import TopTracks from '@/components/spotify/TopTracks'
 import SectionContainer from '@/components/SectionContainer'
 import RecentPosts from '@/components/RecentPosts'
 import Hero from '@/components/landing/Hero'
@@ -42,10 +41,6 @@ export default function Home({ posts }) {
           <Suspense fallback={<LuLoader2 className="mx-auto my-10 h-4 w-4 animate-spin" />}>
             <RecentPosts posts={posts} />
           </Suspense>
-        </SectionContainer>
-        <SectionContainer>
-          <Separator />
-          <TopTracks />
         </SectionContainer>
         <SectionContainer>
           <Separator />

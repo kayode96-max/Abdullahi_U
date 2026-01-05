@@ -48,7 +48,6 @@ This is a production-ready personal portfolio and blog application featuring aut
 - **User registration** and profile management
 
 ### 🎯 Features & Integrations
-- **Spotify Integration** - Show now playing and top tracks
 - **GitHub API** - Fetch and display repository data
 - **Blog post likes** with optimistic UI updates
 - **Page view tracking** for analytics
@@ -78,7 +77,6 @@ This is a production-ready personal portfolio and blog application featuring aut
 - (Optional) GitHub OAuth app
 - (Optional) Google OAuth app
 - (Optional) Resend API key for email
-- (Optional) Spotify API credentials
 - (Optional) Umami Analytics account
 
 ### 1. Clone and Install
@@ -117,11 +115,6 @@ GOOGLE_CLIENT_SECRET=your-google-client-secret
 # Email Authentication (Optional)
 AUTH_RESEND_KEY=your-resend-api-key
 AUTH_RESEND_EMAIL_FROM=noreply@yourdomain.com
-
-# Spotify Integration (Optional)
-SPOTIFY_CLIENT_ID=your-spotify-client-id
-SPOTIFY_CLIENT_SECRET=your-spotify-client-secret
-SPOTIFY_REFRESH_TOKEN=your-spotify-refresh-token
 
 # GitHub API (Optional)
 GITHUB_API_TOKEN=your-github-token
@@ -247,7 +240,6 @@ Add all required environment variables in your Vercel project settings:
 - Email authentication via Resend
 
 ### Integrations
-- **[Spotify API](https://developer.spotify.com/)** - Now playing widget
 - **[GitHub API](https://docs.github.com/en/rest)** - Repository data
 - **[Resend](https://resend.com/)** - Email service
 - **[Umami Analytics](https://umami.is/)** - Privacy-focused analytics

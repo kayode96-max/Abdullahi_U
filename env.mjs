@@ -22,9 +22,6 @@ export const env = createEnv({
     RESEND_EMAIL_DOMAIN: z.string().optional(),
     UPSTASH_REDIS_REST_URL: z.string().optional(),
     UPSTASH_REDIS_REST_TOKEN: z.string().optional(),
-    SPOTIFY_REFRESH_TOKEN: z.string().optional(),
-    SPOTIFY_CLIENT_SECRET: z.string().optional(),
-    SPOTIFY_CLIENT_ID: z.string().optional(),
     GITHUB_API_TOKEN: z.string().optional(),
     GITHUB_API_URL: z.string().optional(),
 
@@ -55,9 +52,6 @@ export const env = createEnv({
     RESEND_EMAIL_DOMAIN: process.env.RESEND_EMAIL_DOMAIN,
     UPSTASH_REDIS_REST_URL: process.env.UPSTASH_REDIS_REST_URL,
     UPSTASH_REDIS_REST_TOKEN: process.env.UPSTASH_REDIS_REST_TOKEN,
-    SPOTIFY_REFRESH_TOKEN: process.env.SPOTIFY_REFRESH_TOKEN,
-    SPOTIFY_CLIENT_SECRET: process.env.SPOTIFY_CLIENT_SECRET,
-    SPOTIFY_CLIENT_ID: process.env.SPOTIFY_CLIENT_ID,
     GITHUB_API_TOKEN: process.env.GITHUB_API_TOKEN,
     GITHUB_API_URL: process.env.GITHUB_API_URL,
 

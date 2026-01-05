@@ -98,7 +98,6 @@ import { cn } from '@/lib/utils'
 import Link from 'next/link'
 
 import { LuMail } from 'react-icons/lu'
-import { AiFillSpotify } from 'react-icons/ai'
 import { AiFillGithub } from 'react-icons/ai'
 import { AiFillFacebook } from 'react-icons/ai'
 import { AiFillYoutube } from 'react-icons/ai'
@@ -133,7 +132,6 @@ const components = {
   settings: LuSettings,
   tools: RiToolsFill,
   mail: LuMail,
-  spotify: AiFillSpotify,
   github: AiFillGithub,
   facebook: AiFillFacebook,
   youtube: AiFillYoutube,
